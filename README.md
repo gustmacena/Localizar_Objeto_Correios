@@ -11,7 +11,7 @@ Você pode instalar as bibliotecas necessárias executando o seguinte comando no
 
 ```bash
 pip install pandas requests beautifulsoup4 openpyxl
-
+```
 
 # Como Usar
 Clone este repositório ou baixe o arquivo rastreio.py.
