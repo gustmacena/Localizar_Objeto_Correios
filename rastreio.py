@@ -82,10 +82,11 @@ for index, linha in dados.iterrows():
 with pd.ExcelWriter(excel_file, engine='openpyxl', mode='a', if_sheet_exists='overlay') as writer:
     sheet_name = writer.book.sheetnames[0]  # Obter o nome da primeira planilha no arquivo Excel
     dados.to_excel(writer, index=False, sheet_name=sheet_name)  # Salvar os dados atualizados na planilha
-    
+
 # Calcular o tempo total de execução em minutos
+fim_tempo = time.time()
+tempo_total = fim_tempo - inicio_tempo
 tempo_total_minutos = tempo_total / 60  # Converter o tempo total de segundos para minutos
 
 # Imprimir um resumo da busca, incluindo o número total de pacotes atualizados e o tempo total de execução em minutos
 print(f"Busca de rastreamento concluída! {len(dados)} pacotes atualizados em {tempo_total_minutos:.2f} minutos.")
-
