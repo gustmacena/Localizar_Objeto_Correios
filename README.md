@@ -1,11 +1,15 @@
 # Rastreamento Automático de Pacotes dos Correios
-Este é um script Python para automatizar o rastreamento de pacotes dos Correios utilizando a API pública do site linkcorreios.com.br.
 
-# Pré-requisitos
-Python 3.x instalado
-Bibliotecas Python: pandas, requests, beautifulsoup4, openpyxl
+Este é um script Python para automatizar o rastreamento de pacotes dos Correios utilizando a API pública do site [linkcorreios.com.br](https://linkcorreios.com.br/).
+
+## Pré-requisitos
+
+- Python 3.x instalado
+- Bibliotecas Python: pandas, requests, beautifulsoup4, openpyxl
+
 Você pode instalar as bibliotecas necessárias executando o seguinte comando no terminal:
 
+```bash
 pip install pandas requests beautifulsoup4 openpyxl
 
 
